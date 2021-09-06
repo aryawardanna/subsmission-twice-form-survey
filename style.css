@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(4deg, rgb(40, 40, 73) 1%, rgba(174,123,241,0.5) 82%), url(twice.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+body {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+h1 , p{
+    text-align: center;
+    color:white
+}
+
+form {
+    max-width: 600px;
+    background:rgba(159, 74, 238, 0.692);
+    margin: 0 auto;
+    padding: 20px 40px;
+    color: white;
+    border-radius: 10px;
+}
+
+/* label, input, select {
+    
+} */
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] , select, textarea{
+    display: block;
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+textarea {height: 100px;}
+
+button {
+    width: 100%;
+    height: 36px;
+    border-radius: 7px;
+    background: rgb(76, 158, 8);
+}

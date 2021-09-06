@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twice Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Twice Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form action="#" id="survey-form">
+        <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </label>
+
+        <label for="email" id="email-label">
+            Email
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </label>
+
+        <label for="age" id="number-label">
+            Age (optional)
+            <input type="number" id="number" placeholder="Age" min="15" max="35">
+        </label>
+
+        <label for="dropdown" id="dropdown-label">
+            How do you now Twice?
+            <select name="" id="dropdown">
+                <option value="">TEST2</option>
+                <option value="">TEST3</option>
+                <option value="">TEST4</option>
+            </select>
+        </label>
+
+        <label for="member" id="member-label">
+            Who is your favorite member?
+        </label>
+        <input type="radio" name="member" value="1"> Tzuyu <br>
+        <input type="radio" name="member" value="2"> Momo <br>
+        <input type="radio" name="member" value="3"> Sana <br>
+        <input type="radio" name="member" value="4"> Jihyo <br>
+        <input type="radio" name="member" value="5"> Mina <br>
+        <input type="radio" name="member" value="6"> Dahyun <br>
+        <input type="radio" name="member" value="7"> Chaeyoung <br>
+        <input type="radio" name="member" value="8"> Nayeon <br>
+
+        <br>
+        <label for="albums" id="albums-label">
+            Choose one are your favorite albums?
+        </label>
+        <input type="checkbox" name="member" value="cry-for-me"> Cry For Me <br>
+        <input type="checkbox" name="member" value="eyes-wide-open"> Eyes Wide Open <br>
+        <input type="checkbox" name="member" value="more-and-more"> More and More <br>
+        <input type="checkbox" name="member" value="feel-special"> Feel Special <br>
+
+        <br>
+        <label for="comments" id="comments-label">
+            Any comments or suggestions?
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </label>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
